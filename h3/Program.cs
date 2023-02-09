@@ -7,9 +7,9 @@ int []array = new int[8];
 Console.Write("[ ");
 Random rnd = new Random();
 
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length-1; i++)
 {
     array[i] = rnd.Next(0,100);
-       Console.Write($"{array[i]} ");
+       Console.Write($"{array[i]}, ");
 }
-Console.Write("]");
+Console.Write($"{array[array.Length-1]} ]");
